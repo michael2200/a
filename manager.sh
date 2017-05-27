@@ -451,6 +451,11 @@ usersandgroups(){
 
 
 StartSoftware (){
+	if [ $(id -u) -ne 0 ]; then
+         echo "Please run as root"
+
+  else
+
 	clear
 	echo "                    \e[34mwelcome  to the software who make esay on you to manag  the system\e[32m"
 	echo ""
@@ -489,6 +494,10 @@ StartSoftware (){
 		sleep 3
 		StartSoftware		
 
-	fi	
+
+		
+	fi
+fi
+
 }
 StartSoftware
