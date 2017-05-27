@@ -452,7 +452,7 @@ usersandgroups(){
 
 StartSoftware (){
 	if [ $(id -u) -ne 0 ]; then
-         echo "Please run as root"
+         echo "\e[91mPlease run as root"
 
   else
 
